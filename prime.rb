@@ -1,5 +1,5 @@
-# Add  code here!
 def prime?(n)
+  return false if n < 0
   arr = (2..n-1).to_a
   result = []
   arr.map { |x|
@@ -13,5 +13,3 @@ def prime?(n)
   }
   result.all? { |y| y == true }
 end
-
-prime?(4)
