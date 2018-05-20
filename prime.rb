@@ -1,5 +1,5 @@
 def prime?(n)
-  return false if n <= 0
+  return false if n <= 1
   arr = (2..n-1).to_a
   result = []
   arr.map { |x|
