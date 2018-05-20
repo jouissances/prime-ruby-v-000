@@ -1,8 +1,7 @@
 # Add  code here!
 def prime?(n)
-  if n > 1 && n % [0..n-1] != 0
-    true
-  else
-    false
-  end
+  arr = [0..n-1]
+  arr.map { |x|
+    return x if n % x != 0
+  }
 end
